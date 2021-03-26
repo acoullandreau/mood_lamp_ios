@@ -24,12 +24,60 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="57j-Ag-WWB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1451" y="282"/>
+            <point key="canvasLocation" x="-5261" y="1896"/>
+        </scene>
+        <!--Info Modal View Controller-->
+        <scene sceneID="6Bx-Tn-kf8">
+            <objects>
+                <viewController id="BHj-v5-9uP" customClass="InfoModalViewController" customModule="Maia" customModuleProvider="target" sceneMemberID="viewController">
+                    <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="yOQ-Rf-gW2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Puu-Ky-bhv">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRY-fN-ldE">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <connections>
+                                        <action selector="closeModalButton:" destination="3yl-aY-DTq" eventType="touchUpInside" id="LPl-ie-Mxa"/>
+                                        <action selector="onCloseModal:" destination="BHj-v5-9uP" eventType="touchUpInside" id="yYm-u8-k3H"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ld3-sv-eR4" customClass="DesignableView" customModule="Maia" customModuleProvider="target">
+                                    <rect key="frame" x="87" y="318" width="240" height="260"/>
+                                    <color key="backgroundColor" name="LightBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="260" id="j4j-DY-f7m"/>
+                                        <constraint firstAttribute="width" constant="240" id="jkd-6C-Gcn"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="15"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Ld3-sv-eR4" firstAttribute="centerX" secondItem="Puu-Ky-bhv" secondAttribute="centerX" id="6Vz-Ra-IdJ"/>
+                                <constraint firstItem="Ld3-sv-eR4" firstAttribute="centerY" secondItem="Puu-Ky-bhv" secondAttribute="centerY" id="KvS-Sr-sNu"/>
+                            </constraints>
+                        </view>
+                        <blurEffect style="regular"/>
+                    </visualEffectView>
+                    <navigationItem key="navigationItem" id="5uR-fb-gi6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yWa-O3-bOE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="3yl-aY-DTq" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-5263.768115942029" y="2704.6875"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="b0H-iF-nic">
             <objects>
                 <tabBarController id="qJV-3U-nFJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1ig-ID-Hw1"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZhD-1i-3sB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -66,7 +114,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Home View Controller" customClass="ViewController" customModule="Maia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Home View Controller" customClass="ConnectPageViewController" customModule="Maia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,6 +155,9 @@
                                 <state key="normal" title="Connexion">
                                     <color key="titleColor" red="0.99215686270000003" green="0.93842500449999999" blue="0.88773578409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onConnectClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O1n-oW-wef"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -119,21 +170,29 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MZs-Wx-DBn">
-                        <barButtonItem key="rightBarButtonItem" image="info.circle" catalog="system" id="hOx-Ii-ZKC"/>
+                        <barButtonItem key="rightBarButtonItem" image="info.circle" catalog="system" id="hOx-Ii-ZKC">
+                            <color key="tintColor" red="0.044638194139999997" green="0.026843836530000002" blue="0.18160891530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="onInfoButtonClick:" destination="BYZ-38-t0r" id="m0D-vC-DP2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="connectButton" destination="NU3-fZ-3Tt" id="cBz-hF-0Gb"/>
+                        <outlet property="infoButton" destination="hOx-Ii-ZKC" id="24m-h8-fFc"/>
+                        <segue destination="qJV-3U-nFJ" kind="show" identifier="connectedView" id="9Lh-Yb-GQX"/>
+                        <segue destination="BHj-v5-9uP" kind="presentation" identifier="infoPopUp" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="NTP-rj-fTs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1452.1739130434785" y="1122.9910714285713"/>
+            <point key="canvasLocation" x="-4314" y="1896"/>
         </scene>
         <!--Mode View Controller-->
         <scene sceneID="Cn5-1K-i0m">
             <objects>
-                <viewController id="yFy-zd-h4d" userLabel="Mode View Controller" customClass="ViewController" customModule="Maia" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lRf-li-Dsi">
+                <viewController id="yFy-zd-h4d" userLabel="Mode View Controller" customClass="ModesViewController" customModule="Maia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lRf-li-Dsi" customClass="Modes">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="SUe-p4-TiB"/>
@@ -142,9 +201,16 @@
                     <navigationItem key="navigationItem" title="Modes" id="0dE-hB-LBB">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" id="D8w-q0-C7O">
                             <color key="tintColor" name="BackgroundColor"/>
+                            <connections>
+                                <action selector="onInfoButtonClick:" destination="yFy-zd-h4d" id="lHX-fH-g1F"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="infoButton" destination="D8w-q0-C7O" id="bGq-ra-tSe"/>
+                        <segue destination="BHj-v5-9uP" kind="presentation" identifier="infoPopUp" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="lgS-Hw-gso"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHr-Vq-57e" sceneMemberID="firstResponder"/>
             </objects>
@@ -204,7 +270,7 @@
         <!--Mesures View Controller-->
         <scene sceneID="TtA-CM-Uq6">
             <objects>
-                <viewController id="1r5-ER-hNC" userLabel="Mesures View Controller" customClass="ViewController" customModule="Maia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1r5-ER-hNC" userLabel="Mesures View Controller" customClass="ReadingsViewController" customModule="Maia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wnv-Jz-tJB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,7 +290,7 @@
         <!--Couleurs View Controller-->
         <scene sceneID="YjS-mp-Gx2">
             <objects>
-                <viewController id="Gkb-u1-RvY" userLabel="Couleurs View Controller" customClass="ViewController" customModule="Maia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Gkb-u1-RvY" userLabel="Couleurs View Controller" customClass="ColorsViewController" customModule="Maia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xjm-9R-V0c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -244,7 +310,7 @@
         <!--Automatismes View Controller-->
         <scene sceneID="uhZ-Dr-k9j">
             <objects>
-                <viewController id="pHe-Os-HY2" userLabel="Automatismes View Controller" customClass="ViewController" customModule="Maia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pHe-Os-HY2" userLabel="Automatismes View Controller" customClass="RulesViewController" customModule="Maia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yft-7A-Elv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -262,11 +328,17 @@
             <point key="canvasLocation" x="-958" y="3431"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="NTP-rj-fTs"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="logo" width="146.17100524902344" height="146.17100524902344"/>
         <namedColor name="BackgroundColor">
             <color red="0.045000001788139343" green="0.027000000700354576" blue="0.18199999630451202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightBackgroundColor">
+            <color red="0.044638194139999997" green="0.026843836530000002" blue="0.18160891530000001" alpha="0.85205765850000004" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

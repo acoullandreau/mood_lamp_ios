@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		CC10038C25C8503900F1FBB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC10038B25C8503900F1FBB6 /* AppDelegate.swift */; };
 		CC10038E25C8503900F1FBB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC10038D25C8503900F1FBB6 /* SceneDelegate.swift */; };
-		CC10039025C8503900F1FBB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC10038F25C8503900F1FBB6 /* ViewController.swift */; };
+		CC10039025C8503900F1FBB6 /* ConnectPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC10038F25C8503900F1FBB6 /* ConnectPageViewController.swift */; };
 		CC10039325C8503900F1FBB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC10039125C8503900F1FBB6 /* Main.storyboard */; };
 		CC10039625C8503900F1FBB6 /* Maia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC10039425C8503900F1FBB6 /* Maia.xcdatamodeld */; };
 		CC10039825C8503A00F1FBB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC10039725C8503A00F1FBB6 /* Assets.xcassets */; };
 		CC10039B25C8503A00F1FBB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC10039925C8503A00F1FBB6 /* LaunchScreen.storyboard */; };
 		CC133762260CD2D600C75266 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC133761260CD2D600C75266 /* Roboto-Light.ttf */; };
+		CC133767260E219300C75266 /* ModesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC133766260E219300C75266 /* ModesViewController.swift */; };
+		CC13376D260E289E00C75266 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13376C260E289E00C75266 /* DesignableView.swift */; };
+		CC133771260E2CB300C75266 /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC133770260E2CB300C75266 /* ColorsViewController.swift */; };
+		CC133775260E2D0100C75266 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC133774260E2D0100C75266 /* RulesViewController.swift */; };
+		CC133778260E2D1200C75266 /* ReadingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC133777260E2D1200C75266 /* ReadingsViewController.swift */; };
+		CC13377B260E2EF000C75266 /* InfoModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13377A260E2EF000C75266 /* InfoModalViewController.swift */; };
 		CC72819D260A423A0091C232 /* Parisienne-Courant.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC72819C260A423A0091C232 /* Parisienne-Courant.ttf */; };
 /* End PBXBuildFile section */
 
@@ -22,13 +28,19 @@
 		CC10038825C8503900F1FBB6 /* Maia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC10038B25C8503900F1FBB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC10038D25C8503900F1FBB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CC10038F25C8503900F1FBB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC10038F25C8503900F1FBB6 /* ConnectPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectPageViewController.swift; sourceTree = "<group>"; };
 		CC10039225C8503900F1FBB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC10039525C8503900F1FBB6 /* Maia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Maia.xcdatamodel; sourceTree = "<group>"; };
 		CC10039725C8503A00F1FBB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC10039A25C8503A00F1FBB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC10039C25C8503A00F1FBB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC133761260CD2D600C75266 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		CC133766260E219300C75266 /* ModesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModesViewController.swift; sourceTree = "<group>"; };
+		CC13376C260E289E00C75266 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		CC133770260E2CB300C75266 /* ColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
+		CC133774260E2D0100C75266 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		CC133777260E2D1200C75266 /* ReadingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingsViewController.swift; sourceTree = "<group>"; };
+		CC13377A260E2EF000C75266 /* InfoModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoModalViewController.swift; sourceTree = "<group>"; };
 		CC72819C260A423A0091C232 /* Parisienne-Courant.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Parisienne-Courant.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +74,7 @@
 		CC10038A25C8503900F1FBB6 /* Maia */ = {
 			isa = PBXGroup;
 			children = (
+				CC13376B260E286F00C75266 /* IBDesignables */,
 				CC133760260CD2A900C75266 /* Fonts */,
 				CC10038B25C8503900F1FBB6 /* AppDelegate.swift */,
 				CC10038D25C8503900F1FBB6 /* SceneDelegate.swift */,
@@ -84,6 +97,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		CC13376B260E286F00C75266 /* IBDesignables */ = {
+			isa = PBXGroup;
+			children = (
+				CC13376C260E289E00C75266 /* DesignableView.swift */,
+			);
+			path = IBDesignables;
+			sourceTree = "<group>";
+		};
 		CCB765D02608D33400A78B83 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +116,12 @@
 		CCB765D12608D34700A78B83 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CC10038F25C8503900F1FBB6 /* ViewController.swift */,
+				CC10038F25C8503900F1FBB6 /* ConnectPageViewController.swift */,
+				CC133766260E219300C75266 /* ModesViewController.swift */,
+				CC133770260E2CB300C75266 /* ColorsViewController.swift */,
+				CC133774260E2D0100C75266 /* RulesViewController.swift */,
+				CC133777260E2D1200C75266 /* ReadingsViewController.swift */,
+				CC13377A260E2EF000C75266 /* InfoModalViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,9 +198,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC10039025C8503900F1FBB6 /* ViewController.swift in Sources */,
+				CC133771260E2CB300C75266 /* ColorsViewController.swift in Sources */,
+				CC133767260E219300C75266 /* ModesViewController.swift in Sources */,
+				CC133778260E2D1200C75266 /* ReadingsViewController.swift in Sources */,
+				CC10039025C8503900F1FBB6 /* ConnectPageViewController.swift in Sources */,
+				CC13376D260E289E00C75266 /* DesignableView.swift in Sources */,
 				CC10039625C8503900F1FBB6 /* Maia.xcdatamodeld in Sources */,
 				CC10038C25C8503900F1FBB6 /* AppDelegate.swift in Sources */,
+				CC133775260E2D0100C75266 /* RulesViewController.swift in Sources */,
+				CC13377B260E2EF000C75266 /* InfoModalViewController.swift in Sources */,
 				CC10038E25C8503900F1FBB6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

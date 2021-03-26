@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ConnectPageViewController: UIViewController {
 
     @IBOutlet weak var connectButton: UIButton!
     
@@ -17,5 +17,6 @@ class ViewController: UIViewController {
         connectButton.layer.cornerRadius = 8
     }
 
+    
 }
 
