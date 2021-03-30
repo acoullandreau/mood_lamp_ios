@@ -21,4 +21,10 @@ class RulesViewController: UIViewController {
     }
     
     
+    @IBAction func onInfoButtonClick(_ sender: Any) {
+        DispatchQueue.main.async{
+           self.performSegue(withIdentifier: "infoPopUp", sender: self)
+        }
+    }
+
 }

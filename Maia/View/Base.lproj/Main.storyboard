@@ -58,20 +58,46 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </view>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8N-4F-SJ1">
+                                    <rect key="frame" x="92" y="338" width="230" height="220"/>
+                                    <color key="tintColor" name="AccentColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="230" id="DGa-sK-Z2i"/>
+                                        <constraint firstAttribute="height" constant="220" id="fbe-UK-rrh"/>
+                                    </constraints>
+                                    <color key="textColor" name="TextLightColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                </textView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SpC-qH-20U">
+                                    <rect key="frame" x="189.5" y="548" width="35.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" name="TextLightColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="Ld3-sv-eR4" firstAttribute="centerX" secondItem="Puu-Ky-bhv" secondAttribute="centerX" id="6Vz-Ra-IdJ"/>
+                                <constraint firstItem="e8N-4F-SJ1" firstAttribute="centerY" secondItem="Puu-Ky-bhv" secondAttribute="centerY" id="HM3-v7-bjA"/>
                                 <constraint firstItem="Ld3-sv-eR4" firstAttribute="centerY" secondItem="Puu-Ky-bhv" secondAttribute="centerY" id="KvS-Sr-sNu"/>
+                                <constraint firstItem="e8N-4F-SJ1" firstAttribute="top" secondItem="SpC-qH-20U" secondAttribute="top" constant="-210" id="ntT-eK-UDz"/>
+                                <constraint firstItem="SpC-qH-20U" firstAttribute="centerX" secondItem="Puu-Ky-bhv" secondAttribute="centerX" id="q4N-TE-9KO"/>
+                                <constraint firstItem="e8N-4F-SJ1" firstAttribute="centerX" secondItem="Puu-Ky-bhv" secondAttribute="centerX" id="uft-Ap-8By"/>
                             </constraints>
                         </view>
                         <blurEffect style="regular"/>
                     </visualEffectView>
                     <navigationItem key="navigationItem" id="5uR-fb-gi6"/>
+                    <connections>
+                        <outlet property="textView" destination="e8N-4F-SJ1" id="wZB-Vy-HVI"/>
+                        <outlet property="versionLabel" destination="SpC-qH-20U" id="ZZx-wh-xwO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yWa-O3-bOE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="3yl-aY-DTq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-5263.768115942029" y="2704.6875"/>
+            <point key="canvasLocation" x="-6607.2463768115949" y="2704.6875"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="b0H-iF-nic">
@@ -179,7 +205,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="connectButton" destination="NU3-fZ-3Tt" id="cBz-hF-0Gb"/>
-                        <outlet property="infoButton" destination="hOx-Ii-ZKC" id="24m-h8-fFc"/>
                         <segue destination="qJV-3U-nFJ" kind="show" identifier="connectedView" id="9Lh-Yb-GQX"/>
                         <segue destination="BHj-v5-9uP" kind="presentation" identifier="infoPopUp" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="NTP-rj-fTs"/>
                     </connections>
@@ -208,7 +233,6 @@
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="infoButton" destination="D8w-q0-C7O" id="bGq-ra-tSe"/>
                         <segue destination="BHj-v5-9uP" kind="presentation" identifier="infoPopUp" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="lgS-Hw-gso"/>
                     </connections>
                 </viewController>
@@ -280,8 +304,14 @@
                     <navigationItem key="navigationItem" title="Mesures" id="JmB-cx-etl">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" id="JQV-Yb-CrF">
                             <color key="tintColor" name="BackgroundColor"/>
+                            <connections>
+                                <action selector="onInfoButtonClick:" destination="1r5-ER-hNC" id="5lb-bJ-flv"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="BHj-v5-9uP" kind="presentation" identifier="infoPopUp" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="sPy-e2-XG8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E8t-aG-796" sceneMemberID="firstResponder"/>
             </objects>
@@ -297,11 +327,23 @@
                         <viewLayoutGuide key="safeArea" id="W3x-Mh-zSR"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" image="info.circle" catalog="system" id="d8Y-Cg-Irr">
+                            <color key="tintColor" name="BackgroundColor"/>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" title="Couleurs" id="tm3-NA-Vov">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" id="rwn-1I-WqF">
                             <color key="tintColor" name="BackgroundColor"/>
+                            <connections>
+                                <action selector="onInfoButtonClick:" destination="Gkb-u1-RvY" id="r5d-R4-RBf"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="BHj-v5-9uP" kind="presentation" identifier="infoPopUp" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="U92-1g-6cc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fSo-BI-HvJ" sceneMemberID="firstResponder"/>
             </objects>
@@ -320,8 +362,14 @@
                     <navigationItem key="navigationItem" title="Automatismes" id="15z-S3-mlH">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" id="D4e-Wt-i0W">
                             <color key="tintColor" name="BackgroundColor"/>
+                            <connections>
+                                <action selector="onInfoButtonClick:" destination="pHe-Os-HY2" id="6tW-jb-dqC"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="BHj-v5-9uP" kind="presentation" identifier="infoPopUp" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="xUo-Xz-jvD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="72I-cs-wd7" sceneMemberID="firstResponder"/>
             </objects>
@@ -329,16 +377,22 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="NTP-rj-fTs"/>
+        <segue reference="sPy-e2-XG8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="logo" width="146.17100524902344" height="146.17100524902344"/>
+        <namedColor name="AccentColor">
+            <color red="0.96200001239776611" green="0.33799999952316284" blue="0.2630000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="BackgroundColor">
             <color red="0.045000001788139343" green="0.027000000700354576" blue="0.18199999630451202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="LightBackgroundColor">
-            <color red="0.044638194139999997" green="0.026843836530000002" blue="0.18160891530000001" alpha="0.85205765850000004" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.045000001788139343" green="0.027000000700354576" blue="0.18199999630451202" alpha="0.85199999809265137" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextLightColor">
+            <color red="0.99199998378753662" green="0.93800002336502075" blue="0.8880000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

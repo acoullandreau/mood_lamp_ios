@@ -10,8 +10,6 @@ import UIKit
 class ModesViewController: UIViewController {
 
     
-    @IBOutlet weak var infoButton: UIBarButtonItem!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // format the connect button
