@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -169,10 +168,9 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NU3-fZ-3Tt">
-                                <rect key="frame" x="107" y="463" width="200" height="60"/>
+                                <rect key="frame" x="107.5" y="463" width="199" height="60"/>
                                 <color key="backgroundColor" red="0.96241527800000004" green="0.33761870859999998" blue="0.26334971190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="7eY-s2-jq0"/>
                                     <constraint firstAttribute="height" constant="60" id="gqt-PI-5Vj"/>
                                 </constraints>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="100"/>
@@ -227,7 +225,6 @@
                                 <color key="backgroundColor" name="LightBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="NhI-PE-8W7"/>
-                                    <constraint firstAttribute="width" constant="211" id="O7I-Cx-98k"/>
                                 </constraints>
                                 <segments>
                                     <segment title="Préconfigurés"/>
@@ -238,32 +235,27 @@
                                     <action selector="switchModesView:" destination="yFy-zd-h4d" eventType="valueChanged" id="9La-Zx-vEb"/>
                                 </connections>
                             </segmentedControl>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zj9-5q-STj">
-                                <rect key="frame" x="0.0" y="169" width="414" height="644"/>
-                                <connections>
-                                    <segue destination="1A7-gF-05w" kind="embed" id="jaL-Br-f1b"/>
-                                </connections>
-                            </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MGG-wU-CPD">
-                                <rect key="frame" x="0.0" y="169" width="414" height="644"/>
-                                <connections>
-                                    <segue destination="rvH-QA-TgE" kind="embed" id="FZ3-fo-QXJ"/>
-                                </connections>
-                            </containerView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7N0-Td-wYi">
+                                <rect key="frame" x="20" y="189" width="374" height="624"/>
+                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="8yg-42-Uao">
+                                    <size key="itemSize" width="165" height="149"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SUe-p4-TiB"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="SUe-p4-TiB" firstAttribute="trailing" secondItem="MGG-wU-CPD" secondAttribute="trailing" id="COa-TF-wqw"/>
-                            <constraint firstItem="SUe-p4-TiB" firstAttribute="trailing" secondItem="Zj9-5q-STj" secondAttribute="trailing" id="HY6-5U-us3"/>
-                            <constraint firstItem="MGG-wU-CPD" firstAttribute="leading" secondItem="SUe-p4-TiB" secondAttribute="leading" id="NWA-f8-9pa"/>
-                            <constraint firstItem="SUe-p4-TiB" firstAttribute="bottom" secondItem="Zj9-5q-STj" secondAttribute="bottom" id="OIS-pp-3IK"/>
-                            <constraint firstItem="Zj9-5q-STj" firstAttribute="leading" secondItem="SUe-p4-TiB" secondAttribute="leading" id="g1M-bm-Pgb"/>
-                            <constraint firstItem="SUe-p4-TiB" firstAttribute="bottom" secondItem="MGG-wU-CPD" secondAttribute="bottom" id="gVj-8b-ZaH"/>
-                            <constraint firstItem="MGG-wU-CPD" firstAttribute="top" secondItem="WWF-Db-0iq" secondAttribute="bottom" constant="25" id="hek-sg-c6s"/>
-                            <constraint firstItem="Zj9-5q-STj" firstAttribute="top" secondItem="WWF-Db-0iq" secondAttribute="bottom" constant="25" id="pdd-xs-9Ro"/>
+                            <constraint firstItem="7N0-Td-wYi" firstAttribute="bottom" secondItem="SUe-p4-TiB" secondAttribute="bottom" id="10t-vJ-ZLk"/>
+                            <constraint firstItem="7N0-Td-wYi" firstAttribute="top" secondItem="WWF-Db-0iq" secondAttribute="bottom" constant="45" id="NkW-fR-Ezc"/>
+                            <constraint firstItem="7N0-Td-wYi" firstAttribute="leading" secondItem="SUe-p4-TiB" secondAttribute="leading" constant="20" id="ekd-mg-0Wf"/>
                             <constraint firstItem="WWF-Db-0iq" firstAttribute="centerX" secondItem="lRf-li-Dsi" secondAttribute="centerX" id="qwV-m7-vHA"/>
                             <constraint firstItem="WWF-Db-0iq" firstAttribute="top" secondItem="SUe-p4-TiB" secondAttribute="top" constant="25" id="vvD-5e-90M"/>
+                            <constraint firstItem="SUe-p4-TiB" firstAttribute="trailing" secondItem="7N0-Td-wYi" secondAttribute="trailing" constant="20" id="wiT-kQ-XFQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Modes" id="0dE-hB-LBB">
@@ -276,8 +268,7 @@
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="customModesView" destination="Zj9-5q-STj" id="d36-ci-aX3"/>
-                        <outlet property="defaultModesView" destination="MGG-wU-CPD" id="h54-Ao-Le5"/>
+                        <outlet property="modesGrid" destination="7N0-Td-wYi" id="hH2-ja-NOE"/>
                         <outlet property="segmentedControl" destination="WWF-Db-0iq" id="nBe-yU-lZr"/>
                         <segue destination="BHj-v5-9uP" kind="presentation" identifier="infoPopUp" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="lgS-Hw-gso"/>
                     </connections>
@@ -417,51 +408,6 @@
             </objects>
             <point key="canvasLocation" x="-958" y="3431"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="vbf-c0-n13">
-            <objects>
-                <viewController id="1A7-gF-05w" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jpM-88-rhg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="644"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7qL-hS-dVL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2938" y="4069"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="EL9-ft-nH4">
-            <objects>
-                <viewController id="rvH-QA-TgE" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vj2-xT-P2e">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="644"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0bB-wV-ipz">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="644"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="modeCell" id="WtW-xI-osw">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WtW-xI-osw" id="UFi-gg-WRj">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LhW-NN-JY3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3707.2463768115945" y="4068.75"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="lgS-Hw-gso"/>
@@ -481,14 +427,5 @@
         <namedColor name="TextLightColor">
             <color red="0.99199998378753662" green="0.93800002336502075" blue="0.8880000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>
