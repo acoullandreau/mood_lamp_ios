@@ -25,6 +25,7 @@
 		CC72819D260A423A0091C232 /* Parisienne-Courant.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC72819C260A423A0091C232 /* Parisienne-Courant.ttf */; };
 		CCB684A52625D8CC0022CCEA /* ModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB684A32625D8CC0022CCEA /* ModeCell.swift */; };
 		CCB684A62625D8CC0022CCEA /* ModeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCB684A42625D8CC0022CCEA /* ModeCell.xib */; };
+		CCB684A92627200D0022CCEA /* ModesConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB684A82627200D0022CCEA /* ModesConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		CC72819C260A423A0091C232 /* Parisienne-Courant.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Parisienne-Courant.ttf"; sourceTree = "<group>"; };
 		CCB684A32625D8CC0022CCEA /* ModeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModeCell.swift; path = Maia/Controller/ModeCell.swift; sourceTree = SOURCE_ROOT; };
 		CCB684A42625D8CC0022CCEA /* ModeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ModeCell.xib; path = Maia/Controller/ModeCell.xib; sourceTree = SOURCE_ROOT; };
+		CCB684A82627200D0022CCEA /* ModesConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModesConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				CC0EEE2926209582003B3267 /* Mode.swift */,
+				CCB684A82627200D0022CCEA /* ModesConfig.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				CCB684A52625D8CC0022CCEA /* ModeCell.swift in Sources */,
 				CC10038C25C8503900F1FBB6 /* AppDelegate.swift in Sources */,
 				CC133775260E2D0100C75266 /* RulesViewController.swift in Sources */,
+				CCB684A92627200D0022CCEA /* ModesConfig.swift in Sources */,
 				CC13377B260E2EF000C75266 /* InfoModalViewController.swift in Sources */,
 				CC0EEE2A26209582003B3267 /* Mode.swift in Sources */,
 				CC10038E25C8503900F1FBB6 /* SceneDelegate.swift in Sources */,

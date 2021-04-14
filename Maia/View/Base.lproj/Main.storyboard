@@ -168,9 +168,10 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NU3-fZ-3Tt">
-                                <rect key="frame" x="107.5" y="463" width="199" height="60"/>
+                                <rect key="frame" x="92" y="463" width="230" height="60"/>
                                 <color key="backgroundColor" red="0.96241527800000004" green="0.33761870859999998" blue="0.26334971190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="CtG-UV-Kz1"/>
                                     <constraint firstAttribute="height" constant="60" id="gqt-PI-5Vj"/>
                                 </constraints>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="100"/>
@@ -210,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4314" y="1896"/>
+            <point key="canvasLocation" x="-4314.4927536231889" y="1895.7589285714284"/>
         </scene>
         <!--Mode View Controller-->
         <scene sceneID="Cn5-1K-i0m">
@@ -238,7 +239,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7N0-Td-wYi">
                                 <rect key="frame" x="20" y="189" width="374" height="624"/>
                                 <color key="backgroundColor" name="BackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="8yg-42-Uao">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="8yg-42-Uao">
                                     <size key="itemSize" width="165" height="149"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>

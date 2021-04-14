@@ -11,10 +11,12 @@ import UIKit
 struct Mode {
     let id: Int
     let orderIndex: Int
-//    let propertyName: String = ""
+    var propertyName: String?
     let isOriginMode: Bool
     let isEditable: Bool
     let colors: [UIColor]
     let speed: Int
+    var thumbnailColors:[UIColor]?
+    var thumbnailGradientType:String?
 }
 

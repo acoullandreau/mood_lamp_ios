@@ -22,10 +22,12 @@ class ModeCell: UICollectionViewCell {
     
     
     @IBAction func onEditClick(_ sender: UIButton) {
+        print("Opening the edit window")
     }
     
     
     @IBAction func onDeleteClick(_ sender: UIButton) {
+        print("Opening the confirmation window")
     }
     
     

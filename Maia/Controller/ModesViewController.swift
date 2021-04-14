@@ -11,13 +11,10 @@ class ModesViewController: UIViewController {
 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var modesGrid: UICollectionView!
+
+    var allModes: [Mode] = defaultModes + customModes
+    var modesArray: [Mode] = []
     
-
-    var modesArray: [Mode] = [
-        Mode(id: 0, orderIndex: 0, isOriginMode: true, isEditable: false, colors: [], speed: 0),
-        Mode(id: 2, orderIndex: 2, isOriginMode: true, isEditable: false, colors: [UIColor(red: 0.89, green: 0.91, blue: 1.00, alpha: 1.00), UIColor(red: 1.00, green: 0.71, blue: 0.42, alpha: 1.00)], speed: 0)
-    ]
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +28,10 @@ class ModesViewController: UIViewController {
         modesGrid.delegate = self
         modesGrid.dataSource = self
         modesGrid.register(UINib(nibName: "ModeCell", bundle: nil), forCellWithReuseIdentifier: "modeCell")
+        
+        // initialize the modesArray
+        modesArray = allModes.filter { $0.isOriginMode == true }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,9 +48,11 @@ class ModesViewController: UIViewController {
     
     @IBAction func switchModesView(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
-            print("Default modes")
+            modesArray = allModes.filter { $0.isOriginMode == true }
+            modesGrid.reloadData()
         } else {
-            print("Custom modes")
+            modesArray = allModes.filter { $0.isOriginMode == false }
+            modesGrid.reloadData()
         }
         
     }
@@ -68,8 +71,25 @@ extension ModesViewController: UICollectionViewDataSource {
         let modeIndex = indexPath[0] + indexPath[1]
         let modeInstance = modesArray[modeIndex]
         
-        if modeInstance.colors != [] {
-            cell.modeThumbnail.backgroundColor = modeInstance.colors[0]
+        // enables/disables the buttons
+        if modeInstance.isEditable == false {
+            cell.editButton.isHidden = true
+        } else {
+            cell.editButton.isHidden = false
+        }
+        if modeInstance.isOriginMode == true {
+            cell.deleteButton.isHidden = true
+        } else {
+            cell.deleteButton.isHidden = false
+        }
+        
+        //sets the name
+        cell.modeName.text = modeInstance.propertyName
+        
+        // sets the color of the thumbnail
+        if modeInstance.id == 1 {
+            let gradient = setThumbnailGradient(colors: modeInstance.thumbnailColors!, type: modeInstance.thumbnailGradientType!)
+            cell.modeThumbnail.layer.addSublayer(gradient)
         } else {
             cell.modeThumbnail.backgroundColor = .red
         }
@@ -77,10 +97,29 @@ extension ModesViewController: UICollectionViewDataSource {
         return cell
     }
     
+    func setThumbnailGradient(colors:[UIColor], type:String) -> CAGradientLayer {
+        return CAGradientLayer()
+    }
+    
+    
     
 }
+
+extension ModesViewController : UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let collectionViewSize = collectionView.frame.size.width / 2
+        return CGSize(width: collectionViewSize , height: 150 )
+
+    }
+}
+
 
 
 extension ModesViewController: UICollectionViewDelegate {
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let modeIndex = indexPath[0] + indexPath[1]
+        let modeInstance = modesArray[modeIndex]
+        print(modeInstance)
+    }
 }
