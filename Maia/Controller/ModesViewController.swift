@@ -14,6 +14,7 @@ class ModesViewController: UIViewController {
 
     var allModes: [Mode] = defaultModes + customModes
     var modesArray: [Mode] = []
+    var tileWidth:CGFloat = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,27 +89,42 @@ extension ModesViewController: UICollectionViewDataSource {
         
         // sets the color of the thumbnail
         if modeInstance.id == 1 {
-            let gradient = setThumbnailGradient(colors: modeInstance.thumbnailColors!, type: modeInstance.thumbnailGradientType!)
-            cell.modeThumbnail.layer.addSublayer(gradient)
+            let gradientLayer = setThumbnailGradient(colors: modeInstance.thumbnailColors!, type: modeInstance.thumbnailGradientType!)
+            gradientLayer.frame = CGRect(x: 0.0, y: 0.0, width: tileWidth, height: 130)
+            cell.modeThumbnail.layer.addSublayer(gradientLayer)
         } else {
             cell.modeThumbnail.backgroundColor = .red
         }
-            
+        
         return cell
     }
     
-    func setThumbnailGradient(colors:[UIColor], type:String) -> CAGradientLayer {
-        return CAGradientLayer()
+    func setThumbnailGradient(colors:[CGColor], type:String) -> CAGradientLayer {
+        let gradient = CAGradientLayer()
+        gradient.colors = colors
+        
+        switch type {
+        case "linear":
+            gradient.type = .axial
+            gradient.startPoint = CGPoint(x: 0, y: 1)
+            gradient.endPoint = CGPoint(x: 1, y: 1)
+            break
+        case "radial":
+            gradient.type = .radial
+            break
+        default:
+            break
+        }
+        return gradient
     }
-    
-    
     
 }
 
 extension ModesViewController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let collectionViewSize = collectionView.frame.size.width / 2
-        return CGSize(width: collectionViewSize , height: 150 )
+        tileWidth = collectionViewSize
+        return CGSize(width: collectionViewSize , height: 160 )
 
     }
 }

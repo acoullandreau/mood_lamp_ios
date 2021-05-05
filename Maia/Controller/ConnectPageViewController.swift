@@ -31,6 +31,7 @@ class ConnectPageViewController: UIViewController {
         print("Connecting to Maïa...")
         // add the code to open bluetooth, select device, connect...
 
+        getModes()
         Timer.scheduledTimer(withTimeInterval:0.5, repeats:false) { (timer) in
             DispatchQueue.main.async{
                self.performSegue(withIdentifier: "connectedView", sender: self)

@@ -217,7 +217,7 @@
         <scene sceneID="Cn5-1K-i0m">
             <objects>
                 <viewController id="yFy-zd-h4d" userLabel="Mode View Controller" customClass="ModesViewController" customModule="Maia" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lRf-li-Dsi" customClass="Modes">
+                    <view key="view" contentMode="scaleToFill" id="lRf-li-Dsi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -411,7 +411,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lgS-Hw-gso"/>
+        <segue reference="U92-1g-6cc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="info.circle" catalog="system" width="128" height="121"/>
