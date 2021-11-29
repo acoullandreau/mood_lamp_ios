@@ -18,7 +18,7 @@ class ModesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // format the segmented control
         UISegmentedControl.appearance().backgroundColor = UIColor(red: 0.46, green: 0.46, blue: 0.50, alpha: 0.24)
         UISegmentedControl.appearance().selectedSegmentTintColor = UIColor(red: 0.85, green: 0.81, blue: 0.85, alpha: 1.00)
@@ -89,8 +89,11 @@ extension ModesViewController: UICollectionViewDataSource {
         
         // sets the color of the thumbnail
         if modeInstance.id == 1 {
+            // call to get the updated size of the thumbnail frame
+            cell.layoutIfNeeded()
+            let cellHeight = cell.modeThumbnail.frame.size.height
             let gradientLayer = setThumbnailGradient(colors: modeInstance.thumbnailColors!, type: modeInstance.thumbnailGradientType!)
-            gradientLayer.frame = CGRect(x: 0.0, y: 0.0, width: tileWidth, height: 130)
+            gradientLayer.frame = CGRect(x: 0.0, y: 0.0, width: tileWidth, height: cellHeight)
             cell.modeThumbnail.layer.addSublayer(gradientLayer)
         } else {
             cell.modeThumbnail.backgroundColor = .red
@@ -124,7 +127,7 @@ extension ModesViewController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let collectionViewSize = collectionView.frame.size.width / 2
         tileWidth = collectionViewSize
-        return CGSize(width: collectionViewSize , height: 160 )
+        return CGSize(width: tileWidth , height: tileWidth )
 
     }
 }
@@ -136,6 +139,6 @@ extension ModesViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let modeIndex = indexPath[0] + indexPath[1]
         let modeInstance = modesArray[modeIndex]
-        print(modeInstance)
+//        print(modeInstance)
     }
 }
