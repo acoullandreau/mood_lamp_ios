@@ -1,0 +1,515 @@
+{
+	"0":{
+		"en":"Off",
+		"fr":"Éteindre",
+		"orderIndex":0,
+		"colors":[],
+		"thumbnailColors":[],
+		"thumbnailGradientType":"",
+		"thumbnailGradientLocations":[]
+	},
+	"1":{
+		"en":"HourOfDay",
+		"fr":"C'est l'heure !",
+		"orderIndex":1,
+		"colors":[],
+		"thumbnailColors":[
+			{ "r": 42, "g": 36, "b": 71 },
+			{ "r": 213, "g": 68, "b": 69 },
+			{ "r": 237, "g": 136, "b": 95 },
+			{ "r": 251, "g": 173, "b": 37 },
+			{ "r": 241, "g": 172, "b": 145 },
+			{ "r": 234, "g": 203, "b": 195 },
+			{ "r": 52, "g": 90, "b": 122 },
+			{ "r": 10, "g": 10, "b": 22 }
+		],
+		"thumbnailGradientType":"horizontal",
+		"thumbnailGradientLocations":[0.08, 0.16, 0.29, 0.4, 0.62, 0.7, 0.74, 0.82]
+	},
+	"2":{
+		"en":"Reading",
+		"fr":"Lecture",
+		"orderIndex":2,
+		"colors":[
+        	{ "r": 227, "g": 233, "b": 255 },
+            { "r": 255, "g": 180, "b": 107 }
+        ],
+        "thumbnailColors":[			
+        	{ "r": 227, "g": 233, "b": 255 },
+            { "r": 255, "g": 180, "b": 107 }
+        ],
+		"thumbnailGradientType":"linear",
+		"thumbnailGradientLocations":[]
+
+	},
+	"3":{
+		"en":"TemperatureDynamic",
+		"fr":"Ambiance température",
+		"orderIndex":3,
+		"colors":[
+			{ "r": 253, "g": 184, "b": 19 },
+            { "r": 253, "g": 228, "b": 132 },
+            { "r": 178, "g": 202, "b": 237 },
+            { "r": 117, "g": 174, "b": 220 }
+		],
+		"thumbnailColors":[
+			{ "r": 253, "g": 184, "b": 19 },
+            { "r": 253, "g": 228, "b": 132 },
+            { "r": 178, "g": 202, "b": 237 },
+            { "r": 117, "g": 174, "b": 220 }
+		],
+		"thumbnailGradientType":"linear",
+		"thumbnailGradientLocations":[]
+	},
+	"4":{
+		"en":"HumidityDynamic",
+		"fr":"Ambiance humidité",
+		"orderIndex":4,
+		"colors":[
+			{ "r": 250, "g": 211, "b": 128 },
+            { "r": 246, "g": 215, "b": 176 },
+            { "r": 155, "g": 198, "b": 146 },
+            { "r": 46, "g": 113, "b": 8 }
+		],
+		"thumbnailColors":[
+			{ "r": 250, "g": 211, "b": 128 },
+            { "r": 246, "g": 215, "b": 176 },
+            { "r": 155, "g": 198, "b": 146 },
+            { "r": 46, "g": 113, "b": 8 }
+		],
+		"thumbnailGradientType":"linear",
+		"thumbnailGradientLocations":[]
+	},
+	"5":{
+		"en":"Happiness",
+		"fr":"Bonheur simple",
+		"orderIndex":5,
+		"colors":[
+        	{ "r": 235, "g": 102, "b": 98 },
+            { "r": 230, "g": 133, "b": 171 },
+            { "r": 237, "g": 171, "b": 208 },
+            { "r": 247, "g": 177, "b": 114 },
+            { "r": 247, "g": 211, "b": 126 },
+            { "r": 168, "g": 200, "b": 154 },
+            { "r": 130, "g": 200, "b": 129 },
+            { "r": 32, "g": 143, "b": 148 },
+            { "r": 32, "g": 61, "b": 133 }
+        ],
+        "thumbnailColors":[
+        	{ "r": 235, "g": 102, "b": 98 },
+            { "r": 230, "g": 133, "b": 171 },
+            { "r": 237, "g": 171, "b": 208 },
+            { "r": 247, "g": 177, "b": 114 },
+            { "r": 247, "g": 211, "b": 126 },
+            { "r": 168, "g": 200, "b": 154 },
+            { "r": 130, "g": 200, "b": 129 },
+            { "r": 32, "g": 143, "b": 148 },
+            { "r": 32, "g": 61, "b": 133 }
+        ],
+		"thumbnailGradientType":"linear",
+		"thumbnailGradientLocations":[]
+	},
+	"6":{
+		"en":"CalmingWave",
+		"fr":"Vague de calme",
+		"orderIndex":6,
+		"colors":[
+        	{ "r": 61, "g": 123, "b": 150 },
+            { "r": 191, "g": 192, "b": 178 },
+            { "r": 212, "g": 212, "b": 204 },
+            { "r": 104, "g": 160, "b": 170 },
+            { "r": 237, "g": 241, "b": 226 },
+            { "r": 213, "g": 222, "b": 238 },
+            { "r": 31, "g": 57, "b": 77 }
+        ],
+        "thumbnailColors":[
+        	{ "r": 61, "g": 123, "b": 150 },
+            { "r": 191, "g": 192, "b": 178 },
+            { "r": 212, "g": 212, "b": 204 },
+            { "r": 104, "g": 160, "b": 170 },
+            { "r": 237, "g": 241, "b": 226 },
+            { "r": 213, "g": 222, "b": 238 },
+            { "r": 31, "g": 57, "b": 77 }
+        ],
+		"thumbnailGradientType":"linear",
+		"thumbnailGradientLocations":[]
+	},
+	"7":{
+		"en":"Autumn",
+		"fr":"Automne",
+		"orderIndex":7,
+		"colors":[
+		    { "r": 97, "g": 64, "b": 78 },
+            { "r": 195, "g": 95, "b": 95 },
+            { "r": 226, "g": 145, "b": 50 },
+            { "r": 191, "g": 154, "b": 115 },
+            { "r": 224, "g": 196, "b": 137 },
+            { "r": 167, "g": 167, "b": 98 },
+            { "r": 131, "g": 117, "b": 25 },
+            { "r": 197, "g": 104, "b": 23 },
+            { "r": 59, "g": 30, "b": 16 }
+        ],
+        "thumbnailColors":[
+        	{ "r": 97, "g": 64, "b": 78 },
+            { "r": 195, "g": 95, "b": 95 },
+            { "r": 226, "g": 145, "b": 50 },
+            { "r": 191, "g": 154, "b": 115 },
+            { "r": 224, "g": 196, "b": 137 },
+            { "r": 167, "g": 167, "b": 98 },
+            { "r": 131, "g": 117, "b": 25 },
+            { "r": 197, "g": 104, "b": 23 },
+            { "r": 59, "g": 30, "b": 16 }
+        ],
+		"thumbnailGradientType":"linear",
+		"thumbnailGradientLocations":[]
+	},
+	"8":{
+		"en":"FishBowl",
+		"fr":"Poisson dans l'eau",
+		"orderIndex":8,
+		"colors":[],
+		"thumbnailColors":[
+			{ "r": 255, "g": 147, "b": 41 },
+            { "r": 135, "g": 117, "b": 113 },
+            { "r": 31, "g": 67, "b": 102 }
+		],
+		"thumbnailGradientType":"radial",
+		"thumbnailGradientLocations":[0.02, 0.2, 1]
+	},
+	"9":{
+		"en":"SuperNova",
+		"fr":"Supernova",
+		"orderIndex":9,
+		"colors":[
+        	{ "r": 33, "g": 16, "b": 86 },
+            { "r": 221, "g": 34, "b": 104 },
+            { "r": 250, "g": 202, "b": 43 }
+        ],
+        "thumbnailColors":[
+        	{ "r": 33, "g": 16, "b": 86 },
+            { "r": 221, "g": 34, "b": 104 },
+            { "r": 250, "g": 202, "b": 43 }
+        ],
+		"thumbnailGradientType":"linear",
+		"thumbnailGradientLocations":[]
+	},
+	"10":{
+		"en":"Fire",
+		"fr":"Au coin du feu",
+		"orderIndex":10,
+		"colors":[],
+		"thumbnailColors":[
+			{ "r": 57, "g": 57, "b": 57 },
+            { "r": 227, "g": 61, "b": 16 },
+            { "r": 251, "g": 199, "b": 80 },
+            { "r": 254, "g": 250, "b": 221 }
+		],
+		"thumbnailGradientType":"vertical",
+		"thumbnailGradientLocations":[0.02, 0.17, 0.89, 1]
+	},
+	"11":{
+		"en":"Lavender",
+		"fr":"Senteur de lavande",
+		"orderIndex":11,
+		"colors":[
+        	{ "r": 48, "g": 67, "b": 107 },
+            { "r": 93, "g": 86, "b": 127 },
+            { "r": 138, "g": 105, "b": 148 },
+            { "r": 165, "g": 169, "b": 214 },
+            { "r": 232, "g": 221, "b": 229 },
+            { "r": 213, "g": 222, "b": 238 },
+            { "r": 210, "g": 180, "b": 191 },
+            { "r": 211, "g": 188, "b": 217 }
+        ],
+        "thumbnailColors":[
+        	{ "r": 48, "g": 67, "b": 107 },
+            { "r": 93, "g": 86, "b": 127 },
+            { "r": 138, "g": 105, "b": 148 },
+            { "r": 165, "g": 169, "b": 214 },
+            { "r": 232, "g": 221, "b": 229 },
+            { "r": 213, "g": 222, "b": 238 },
+            { "r": 210, "g": 180, "b": 191 },
+            { "r": 211, "g": 188, "b": 217 }
+        ],
+		"thumbnailGradientType":"linear",
+		"thumbnailGradientLocations":[]
+	},
+	"12":{
+		"en":"NationalDay",
+		"fr":"14 juillet",
+		"orderIndex":12,
+		"colors":[
+        	{ "r": 255, "g": 0, "b": 0 },
+            { "r": 255, "g": 0, "b": 0 },
+            { "r": 255, "g": 255, "b": 255 },
+            { "r": 0, "g": 0, "b": 255 },
+            { "r": 0, "g": 0, "b": 255 },
+            { "r": 255, "g": 255, "b": 255 }
+        ],
+        "thumbnailColors":[
+        	{ "r": 255, "g": 0, "b": 0 },
+            { "r": 255, "g": 0, "b": 0 },
+            { "r": 255, "g": 255, "b": 255 },
+            { "r": 0, "g": 0, "b": 255 },
+            { "r": 0, "g": 0, "b": 255 },
+            { "r": 255, "g": 255, "b": 255 }
+        ],
+		"thumbnailGradientType":"linear",
+		"thumbnailGradientLocations":[]
+	},
+	"13":{
+		"en":"Sunset",
+		"fr":"Coucher de soleil",
+		"orderIndex":13,
+		"colors":[
+        	{ "r": 251, "g": 173, "b": 37 },
+            { "r": 251, "g": 191, "b": 41 },
+            { "r": 238, "g": 85, "b": 25 },
+            { "r": 200, "g": 32, "b": 15 },
+            { "r": 132, "g": 37, "b": 57 },
+            { "r": 106, "g": 36, "b": 72 },
+            { "r": 107, "g": 99, "b": 123 },
+            { "r": 86, "g": 101, "b": 142 },
+            { "r": 47, "g": 59, "b": 92 }
+        ],
+        "thumbnailColors":[
+        	{ "r": 251, "g": 173, "b": 37 },
+            { "r": 251, "g": 191, "b": 41 },
+            { "r": 238, "g": 85, "b": 25 },
+            { "r": 200, "g": 32, "b": 15 },
+            { "r": 132, "g": 37, "b": 57 },
+            { "r": 106, "g": 36, "b": 72 },
+            { "r": 107, "g": 99, "b": 123 },
+            { "r": 86, "g": 101, "b": 142 },
+            { "r": 47, "g": 59, "b": 92 }
+        ],
+		"thumbnailGradientType":"linear",
+		"thumbnailGradientLocations":[]
+	},
+	"14":{
+		"en":"Beach",
+		"fr":"À la plage",
+		"orderIndex":14,
+		"colors":[],
+		"thumbnailColors":[
+			{ "r": 198, "g": 169, "b": 144 },
+            { "r": 71, "g": 183, "b": 203 }
+		],
+		"thumbnailGradientType":"vertical",
+		"thumbnailGradientLocations":[0.39, 0.62]
+	},
+	"15":{
+		"en":"Relaxation",
+		"fr":"Relaxation",
+		"orderIndex":15,
+		"colors":[
+        	{ "r": 162, "g": 152, "b": 181 },
+            { "r": 162, "g": 114, "b": 141 },
+            { "r": 95, "g": 88, "b": 132 },
+            { "r": 151, "g": 131, "b": 183 },
+            { "r": 107, "g": 87, "b": 117 },
+            { "r": 214, "g": 149, "b": 125 },
+            { "r": 213, "g": 222, "b": 238 }
+        ],
+        "thumbnailColors":[
+        	{ "r": 162, "g": 152, "b": 181 },
+            { "r": 162, "g": 114, "b": 141 },
+            { "r": 95, "g": 88, "b": 132 },
+            { "r": 151, "g": 131, "b": 183 },
+            { "r": 107, "g": 87, "b": 117 },
+            { "r": 214, "g": 149, "b": 125 },
+            { "r": 213, "g": 222, "b": 238 }
+        ],
+		"thumbnailGradientType":"linear",
+		"thumbnailGradientLocations":[]
+	},
+	"16":{
+		"en":"SparklingPink",
+		"fr":"Rosé pétillant",
+		"orderIndex":16,
+		"colors":[
+        	{ "r": 216, "g": 116, "b": 162 },
+            { "r": 186, "g": 105, "b": 128 },
+            { "r": 234, "g": 203, "b": 195 },
+            { "r": 223, "g": 197, "b": 200 },
+            { "r": 214, "g": 175, "b": 177 },
+            { "r": 234, "g": 111, "b": 124 },
+            { "r": 234, "g": 175, "b": 173 }
+        ],
+        "thumbnailColors":[
+        	{ "r": 216, "g": 116, "b": 162 },
+            { "r": 186, "g": 105, "b": 128 },
+            { "r": 234, "g": 203, "b": 195 },
+            { "r": 223, "g": 197, "b": 200 },
+            { "r": 214, "g": 175, "b": 177 },
+            { "r": 234, "g": 111, "b": 124 },
+            { "r": 234, "g": 175, "b": 173 }
+        ],
+		"thumbnailGradientType":"linear",
+		"thumbnailGradientLocations":[]
+	},
+	"17":{
+		"en":"Romantic",
+		"fr":"Romantique",
+		"orderIndex":17,
+		"colors":[
+        	{ "r": 121, "g": 66, "b": 98 },
+            { "r": 238, "g": 130, "b": 127 },
+            { "r": 252, "g": 200, "b": 193 },
+            { "r": 251, "g": 150, "b": 76 }
+        ],
+        "thumbnailColors":[
+        	{ "r": 121, "g": 66, "b": 98 },
+            { "r": 238, "g": 130, "b": 127 },
+            { "r": 252, "g": 200, "b": 193 },
+            { "r": 251, "g": 150, "b": 76 }
+        ],
+		"thumbnailGradientType":"linear",
+		"thumbnailGradientLocations":[]
+	},
+	"18":{
+		"en":"Forest",
+		"fr":"Balade en forêt",
+		"orderIndex":18,
+		"colors":[
+        	{ "r": 44, "g": 112, "b": 116 },
+            { "r": 61, "g": 124, "b": 119 },
+            { "r": 76, "g": 133, "b": 121 },
+            { "r": 98, "g": 151, "b": 125 },
+            { "r": 147, "g": 172, "b": 131 },
+            { "r": 176, "g": 183, "b": 131 }
+        ],
+        "thumbnailColors":[
+        	{ "r": 44, "g": 112, "b": 116 },
+            { "r": 61, "g": 124, "b": 119 },
+            { "r": 76, "g": 133, "b": 121 },
+            { "r": 98, "g": 151, "b": 125 },
+            { "r": 147, "g": 172, "b": 131 },
+            { "r": 176, "g": 183, "b": 131 }
+        ],
+		"thumbnailGradientType":"linear",
+		"thumbnailGradientLocations":[]
+	},
+	"19":{
+		"en":"Christmas",
+		"fr":"Joyeux Noël",
+		"orderIndex":19,
+		"colors":[],
+		"thumbnailColors":[
+			{ "r": 194, "g": 122, "b": 126 },
+            { "r": 178, "g": 85, "b": 44 },
+            { "r": 67, "g": 108, "b": 58 },
+            { "r": 67, "g": 108, "b": 58 },
+            { "r": 12, "g": 11, "b": 82 },
+            { "r": 251, "g": 194, "b": 41 }
+
+		],
+		"thumbnailGradientType":"diagonal",
+		"thumbnailGradientLocations":[0.1, 0.2, 0.3, 0.7, 0.8, 0.9]
+	},
+	"20":{
+		"en":"NightSky",
+		"fr":"Ciel étoilé",
+		"orderIndex":20,
+		"colors":[
+        	{ "r": 2, "g": 23, "b": 46 },
+            { "r": 3, "g": 29, "b": 55 },
+            { "r": 9, "g": 29, "b": 55 },
+            { "r": 16, "g": 41, "b": 73 },
+            { "r": 6, "g": 39, "b": 70 },
+            { "r": 8, "g": 49, "b": 85 },
+            { "r": 11, "g": 15, "b": 39 },
+            { "r": 10, "g": 12, "b": 52 },
+            { "r": 22, "g": 27, "b": 55 },
+            { "r": 36, "g": 43, "b": 75 }
+        ],
+        "thumbnailColors":[
+        	{ "r": 2, "g": 23, "b": 46 },
+            { "r": 3, "g": 29, "b": 55 },
+            { "r": 9, "g": 29, "b": 55 },
+            { "r": 16, "g": 41, "b": 73 },
+            { "r": 6, "g": 39, "b": 70 },
+            { "r": 8, "g": 49, "b": 85 },
+            { "r": 11, "g": 15, "b": 39 },
+            { "r": 10, "g": 12, "b": 52 },
+            { "r": 22, "g": 27, "b": 55 },
+            { "r": 36, "g": 43, "b": 75 }
+        ],
+		"thumbnailGradientType":"linear",
+		"thumbnailGradientLocations":[]
+	},
+	"21":{
+		"en":"Rainbow",
+		"fr":"Arc-en-ciel",
+		"orderIndex":21,
+		"colors":[],
+		"thumbnailColors":[
+			{ "r": 115, "g": 230, "b": 221 },
+            { "r": 115, "g": 141, "b": 230 },
+            { "r": 230, "g": 121, "b": 115 },
+            { "r": 230, "g": 220, "b": 115 }
+		],
+		"thumbnailGradientType":"horizontal",
+		"thumbnailGradientLocations":[0.15, 0.4, 0.65, 0.85]
+	},
+	"22":{
+		"en":"Bubbles",
+		"fr":"Bulles",
+		"orderIndex":22,
+		"colors":[
+        	{ "r": 10, "g": 10, "b": 22 },
+            { "r": 52, "g": 90, "b": 122 }
+        ],
+        "thumbnailColors":[
+        	{ "r": 10, "g": 10, "b": 22 },
+            { "r": 52, "g": 90, "b": 122 }
+        ],
+		"thumbnailGradientType":"linear",
+		"thumbnailGradientLocations":[]
+	},
+	"23":{
+		"en":"SummerHolidays",
+		"fr":"Vacances d'été",
+		"orderIndex":23,
+		"colors":[],
+		"thumbnailColors":[
+			{ "r": 246, "g": 174, "b": 44 },
+            { "r": 23, "g": 83, "b": 150 },
+            { "r": 222, "g": 185, "b": 144 },
+            { "r": 164, "g": 188, "b": 39 }
+		],
+		"thumbnailGradientType":"vertical",
+		"thumbnailGradientLocations":[0.15, 0.36, 0.65, 0.9]
+	},
+	"24":{
+		"en":"Party",
+		"fr":"Fête",
+		"orderIndex":24,
+		"colors":[],
+		"thumbnailColors":[
+			{ "r": 255, "g": 0, "b": 0 },
+            { "r": 0, "g": 255, "b": 0 },
+            { "r": 0, "g": 0, "b": 255 },
+		],
+		"thumbnailGradientType":"conic",
+		"thumbnailGradientLocations":[]
+	},
+	"25":{
+		"en":"Conversation",
+		"fr":"Conversation",
+		"orderIndex":25,
+		"colors":[],
+		"thumbnailColors":[
+			{ "r": 222, "g": 168, "b": 248 },
+            { "r": 168, "g": 222, "b": 258 },
+            { "r": 189, "g": 250, "b": 205 },
+            { "r": 243, "g": 250, "b": 189 },
+            { "r": 250, "g": 227, "b": 189 },
+            { "r": 248, "g": 172, "b": 171 },
+            { "r": 254, "g": 170, "b": 212 }
+		],
+		"thumbnailGradientType":"diagonal",
+		"thumbnailGradientLocations":[0, 0.219, 0.356, 0.539, 0.668, 0.95, 0.999]
+	}
+}
+

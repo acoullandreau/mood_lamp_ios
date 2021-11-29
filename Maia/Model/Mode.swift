@@ -11,8 +11,50 @@ import UIKit
 
 struct ModesData: Decodable {
     let en: String
+    let fr: String
+    let orderIndex: Int
+    let colors:[ModesColors]
+    let thumbnailColors:[ModesColors]
+    let thumbnailGradientType:String
+    let thumbnailGradientLocations:[Float]
+}
+
+struct ModesColors: Decodable {
+    let red: Int
+    let green:Int
+    let blue:Int
+    
+    private enum CodingKeys: String, CodingKey {
+        case red="r"
+        case green="g"
+        case blue="b"
+    }
+    
+    //var color = UIColor(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
     
 }
+
+
+/*
+"1":{
+    "en":"HourOfDay",
+    "fr":"C'est l'heure !",
+    "orderIndex":1,
+    "colors":[],
+    "thumbnailColors":[
+        { "r": 42, "g": 36, "b": 71 },
+        { "r": 213, "g": 68, "b": 69 },
+        { "r": 237, "g": 136, "b": 95 },
+        { "r": 251, "g": 173, "b": 37 },
+        { "r": 241, "g": 172, "b": 145 },
+        { "r": 234, "g": 203, "b": 195 },
+        { "r": 52, "g": 90, "b": 122 },
+        { "r": 10, "g": 10, "b": 22 }
+    ],
+    "thumbnailGradientType":"horizontal",
+    "thumbnailGradientLocations":[0.08, 0.16, 0.29, 0.4, 0.62, 0.7, 0.74, 0.82]
+},
+*/
 
 
 

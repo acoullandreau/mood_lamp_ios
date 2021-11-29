@@ -9,12 +9,9 @@ import Foundation
 import UIKit
 
 // get the modes
-
 func getModes() {
-    
     if let path = Bundle.main.path(forResource: "modesConfig", ofType: "json") {
         do {
-            
             let jsonData = try NSData(contentsOfFile: path, options: NSData.ReadingOptions.mappedIfSafe)
             parseJSON(modesData: jsonData as Data)
         } catch {}
@@ -25,12 +22,18 @@ func getModes() {
 func parseJSON(modesData: Data) {
     let decoder = JSONDecoder()
     do {
-        let decodedData = try decoder.decode(ModesData.self, from: modesData)
-        print(decodedData)
+        let decodedData = try decoder.decode([String:ModesData].self, from: modesData)
+//        print(decodedData)
     } catch {
         
     }
 }
+
+// get UIColor from an rgb object
+
+
+
+
 
 
 
