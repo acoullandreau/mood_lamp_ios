@@ -26,7 +26,7 @@ class ConnectPageViewController: UIViewController {
         super.viewWillDisappear(true)
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
-    
+
     @IBAction func onConnectClick(_ sender: Any) {
         print("Connecting to Maïa...")
         // add the code to open bluetooth, select device, connect...

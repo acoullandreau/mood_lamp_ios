@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iQo-RM-VkB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iQo-RM-VkB">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,7 +12,7 @@
         <!--Navigation Controller-->
         <scene sceneID="PdH-DQ-xgb">
             <objects>
-                <navigationController id="iQo-RM-VkB" sceneMemberID="viewController">
+                <navigationController interfaceStyle="dark" id="iQo-RM-VkB" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cJ7-J9-JYu" userLabel="Maïa">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -71,7 +71,7 @@
                                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                 </textView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SpC-qH-20U">
-                                    <rect key="frame" x="189.5" y="548" width="35.5" height="17"/>
+                                    <rect key="frame" x="189" y="548" width="36" height="17"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <color key="textColor" name="TextLightColor"/>
                                     <nil key="highlightedColor"/>
@@ -108,6 +108,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="LightBackgroundColor"/>
+                        <color key="barTintColor" name="TextLightColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="AAT-Kn-0r5" kind="relationship" relationship="viewControllers" id="rp5-mf-git"/>
@@ -124,10 +126,18 @@
         <scene sceneID="4en-3y-sLV">
             <objects>
                 <navigationController id="KxE-Md-7Jt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Automatismes" id="AbR-1j-qqs"/>
+                    <tabBarItem key="tabBarItem" title="Automatismes" id="AbR-1j-qqs">
+                        <color key="badgeColor" name="TextLightColor"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="C4Q-jz-vhf">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="TextLightColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="TextLightColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="pHe-Os-HY2" kind="relationship" relationship="rootViewController" id="h9p-5X-qyS"/>
@@ -197,7 +207,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="MZs-Wx-DBn">
                         <barButtonItem key="rightBarButtonItem" image="info.circle" catalog="system" id="hOx-Ii-ZKC">
-                            <color key="tintColor" red="0.044638194139999997" green="0.026843836530000002" blue="0.18160891530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" name="TextLightColor"/>
                             <connections>
                                 <action selector="onInfoButtonClick:" destination="BYZ-38-t0r" id="m0D-vC-DP2"/>
                             </connections>
@@ -261,7 +271,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Modes" id="0dE-hB-LBB">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" id="D8w-q0-C7O">
-                            <color key="tintColor" name="BackgroundColor"/>
+                            <color key="tintColor" name="TextLightColor"/>
                             <connections>
                                 <action selector="onInfoButtonClick:" destination="yFy-zd-h4d" id="lHX-fH-g1F"/>
                             </connections>
@@ -276,16 +286,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHr-Vq-57e" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3342.0289855072465" y="3430.5803571428569"/>
+            <point key="canvasLocation" x="-3342" y="3496"/>
         </scene>
         <!--Mesures-->
         <scene sceneID="TY6-UN-MZk">
             <objects>
                 <navigationController id="r89-hp-Pi6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Mesures" id="0Bp-aU-QQL"/>
+                    <tabBarItem key="tabBarItem" title="Mesures" id="0Bp-aU-QQL">
+                        <color key="badgeColor" name="TextLightColor"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1fD-ae-XV4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="TextLightColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="TextLightColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="1r5-ER-hNC" kind="relationship" relationship="rootViewController" id="nBt-17-Dpi"/>
@@ -299,10 +317,15 @@
         <scene sceneID="J32-gK-MeG">
             <objects>
                 <navigationController id="AAT-Kn-0r5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Modes" id="1xy-DW-dKA"/>
+                    <tabBarItem key="tabBarItem" title="Modes" id="1xy-DW-dKA">
+                        <color key="badgeColor" name="TextLightColor"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="c0G-vK-SRu">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="TextLightColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="yFy-zd-h4d" kind="relationship" relationship="rootViewController" id="oSr-LR-ew3"/>
@@ -316,10 +339,18 @@
         <scene sceneID="6v8-rA-4w0">
             <objects>
                 <navigationController id="MIf-aA-lYe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Couleurs" id="Dgw-hL-fRH"/>
+                    <tabBarItem key="tabBarItem" title="Couleurs" id="Dgw-hL-fRH">
+                        <color key="badgeColor" name="TextLightColor"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="djl-cd-Ra3">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="TextLightColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="TextLightColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="Gkb-u1-RvY" kind="relationship" relationship="rootViewController" id="lGy-Fn-qNc"/>
@@ -341,7 +372,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Mesures" id="JmB-cx-etl">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" id="JQV-Yb-CrF">
-                            <color key="tintColor" name="BackgroundColor"/>
+                            <color key="tintColor" name="TextLightColor"/>
                             <connections>
                                 <action selector="onInfoButtonClick:" destination="1r5-ER-hNC" id="5lb-bJ-flv"/>
                             </connections>
@@ -353,7 +384,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E8t-aG-796" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1739" y="3431"/>
+            <point key="canvasLocation" x="-1738" y="3495"/>
         </scene>
         <!--Couleurs View Controller-->
         <scene sceneID="YjS-mp-Gx2">
@@ -368,7 +399,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Couleurs" id="tm3-NA-Vov">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" id="rwn-1I-WqF">
-                            <color key="tintColor" name="BackgroundColor"/>
+                            <color key="tintColor" name="TextLightColor"/>
                             <connections>
                                 <action selector="onInfoButtonClick:" destination="Gkb-u1-RvY" id="r5d-R4-RBf"/>
                             </connections>
@@ -381,7 +412,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fSo-BI-HvJ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2532" y="3441"/>
+            <point key="canvasLocation" x="-2542" y="3495"/>
         </scene>
         <!--Automatismes View Controller-->
         <scene sceneID="uhZ-Dr-k9j">
@@ -395,7 +426,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Automatismes" id="15z-S3-mlH">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" id="D4e-Wt-i0W">
-                            <color key="tintColor" name="BackgroundColor"/>
+                            <color key="tintColor" name="TextLightColor"/>
                             <connections>
                                 <action selector="onInfoButtonClick:" destination="pHe-Os-HY2" id="6tW-jb-dqC"/>
                             </connections>
@@ -407,11 +438,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="72I-cs-wd7" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-958" y="3431"/>
+            <point key="canvasLocation" x="-958" y="3495"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="U92-1g-6cc"/>
+        <segue reference="lgS-Hw-gso"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="info.circle" catalog="system" width="128" height="121"/>

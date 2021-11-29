@@ -12,7 +12,6 @@ class RulesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // format the connect button
     }
     
     override func viewWillAppear(_ animated: Bool) {
